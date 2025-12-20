@@ -76,6 +76,8 @@ main {
   flex-direction: column;
 
   max-width: 375px;
+  /* 这里如果不设置，就会收缩成 .result的宽度 */
+  width: 100%;
   background-color: var(--color-white);
 
   gap: 24px;
@@ -90,14 +92,35 @@ main {
   align-items: center;
 
   height: 356px;
-  background: linear-gradient(
-    to bottom,
-    var(--color-gradient-2-start),
-    var(--color-gradient-2-end)
-  );
+  background: linear-gradient(180deg, #7755ff 0%, #2f2ce9 100%);
+
   border-radius: 0 0 24px 24px;
 }
 
-.result {
+.result-container .result {
   max-width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.result-container .result .head {
+  font: var(--text-preset5);
+  color: var(--color-navy-200);
+}
+
+.result-container .result .score {
+  width: 140px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 140px;
+  height: 140px;
+
+  /* colors/gradient/1 */
+  background: linear-gradient(180deg, #4d21c9 0%, rgba(37, 33, 201, 0) 100%);
+  border-radius: 70px;
 }
