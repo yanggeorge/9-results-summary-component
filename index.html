@@ -24,7 +24,7 @@
 
         <div class="score">
           <span class="num">76</span>
-          of 100
+          <p class="total">of 100</p>
         </div>
 
         <div class="content">
@@ -34,39 +34,45 @@
       </div>
     </div>
 
-    <div class="summary-container">
-      <div class="summary">
-        <p class="title">Summary</p>
+    <div class="summary">
+      <p class="title">Summary</p>
 
-        <div class="table">
-          <div>
+      <div class="table">
+        <div class="row reaction">
+          <div class="left">
             <img src="/assets/images/icon-reaction.svg" alt="icon-reaction">
             <p class="label">Reaction</p>
-            <div class="score"><span class="num">80</span> / 100</div>
           </div>
-
-          <div>
-            <img src="/assets/images/icon-memory.svg" alt="icon-memory">
-            <p class="label">Memory</p>
-            <div class="score"><span class="num">92</span> / 100</div>
-          </div>
-
-          <div>
-            <img src="/assets/images/icon-verbal.svg" alt="icon-verbal">
-            <p class="label">Verbal</p>
-            <div class="score"><span class="num">61</span> / 100</div>
-          </div>
-
-          <div>
-            <img src="/assets/images/icon-visual.svg" alt="icon-visual">
-            <p class="label">Visual</p>
-            <div class="score"><span class="num">72</span> / 100</div>
-          </div>
-
+          <div class="score"><span class="num">80</span><span class="total">/ 100</span></div>
         </div>
 
-        <button>Continue</button>
+        <div class="row memory">
+          <div class="left">
+            <img src="/assets/images/icon-memory.svg" alt="icon-memory">
+            <p class="label">Memory</p>
+          </div>
+          <div class="score"><span class="num">92</span><span class="total">/ 100</span></div>
+        </div>
+
+        <div class="row verbal">
+          <div class="left">
+            <img src="/assets/images/icon-verbal.svg" alt="icon-verbal">
+            <p class="label">Verbal</p>
+          </div>
+          <div class="score"><span class="num">61</span><span class="total">/ 100</span></div>
+        </div>
+
+        <div class="row visual">
+          <div class="left">
+            <img src="/assets/images/icon-visual.svg" alt="icon-visual">
+            <p class="label">Visual</p>
+          </div>
+          <div class="score"><span class="num">72</span><span class="total">/ 100</span></div>
+        </div>
+
       </div>
+
+      <button>Continue</button>
     </div>
   </main>
 

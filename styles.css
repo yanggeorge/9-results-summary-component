@@ -74,11 +74,13 @@ body {
 main {
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   max-width: 375px;
   /* 这里如果不设置，就会收缩成 .result的宽度 */
   width: 100%;
   background-color: var(--color-white);
+  padding-bottom: 30px;
 
   gap: 24px;
 }
@@ -114,6 +116,7 @@ main {
   width: 140px;
   height: 140px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -123,4 +126,137 @@ main {
   /* colors/gradient/1 */
   background: linear-gradient(180deg, #4d21c9 0%, rgba(37, 33, 201, 0) 100%);
   border-radius: 70px;
+}
+
+.result-container .result .score .num {
+  font: var(--text-preset2);
+  color: var(--color-white);
+}
+
+.result-container .result .score .total {
+  font: var(--text-preset6);
+  color: var(--color-navy-200);
+  width: 63px;
+  height: 21px;
+
+  text-align: center;
+  opacity: 0.52;
+}
+.result-container .result .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.result-container .result .content .title {
+  font: var(--text-preset4);
+  color: var(--color-white);
+}
+.result-container .result .content .desc {
+  font: var(--text-preset6-500);
+  color: var(--color-navy-200);
+  text-align: center;
+}
+
+.summary {
+  width: 315px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.summary .title {
+  font: var(--text-preset5);
+  color: var(--color-navy-950);
+}
+
+.summary .table {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.summary .table .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  height: 56px;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.summary .table .row .left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.summary .table .row .left img {
+  width: 20px;
+  height: 20px;
+  display: block;
+  object-fit: cover;
+}
+
+.summary .table .row .left .lable {
+  font: var(--text-preset6-500);
+}
+
+.summary .table .row .score {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.reaction.row {
+  background-color: var(--color-red-50);
+}
+
+.memory.row {
+  background-color: var(--color-yellow-50);
+}
+
+.verbal.row {
+  background-color: var(--color-green-50);
+}
+
+.visual.row {
+  background-color: var(--color-blue-50);
+}
+
+.reaction .label {
+  color: var(--color-red-400);
+}
+
+.memory .label {
+  color: var(--color-yellow-400);
+}
+
+.verbal .label {
+  color: var(--color-green-500);
+}
+
+.visual .label {
+  color: var(--color-blue-800);
+}
+
+.row .score .num {
+  font: var(--text-preset6);
+  color: var(--color-navy-950);
+}
+
+.row .score .total {
+  font: var(--text-preset6);
+  color: var(--color-navy-950);
+  opacity: 0.5;
+}
+
+.summary button {
+  border-radius: 128px;
+  height: 56px;
+  background-color: var(--color-navy-950);
+  font: var(--text-preset5);
+  color: var(--color-white);
 }
