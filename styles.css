@@ -332,3 +332,25 @@ main {
     font: var(--text-preset5);
   }
 }
+
+@media (min-width: 1440px) {
+  main {
+    max-width: 736px;
+  }
+  .result-container {
+    width: 368px;
+  }
+
+  .summary-container {
+    width: 368px;
+  }
+
+  .result-container .result {
+    max-width: 260px;
+  }
+
+  .result-container .result .content .desc {
+    font: var(--text-preset5);
+    width: 100%;
+  }
+}
