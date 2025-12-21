@@ -63,7 +63,7 @@ body {
   justify-content: center;
 
   /* 这个强制居中不要用 */
-  /* align-items: center; */
+  align-items: center;
   min-height: 100vh;
 }
 
@@ -93,9 +93,7 @@ main {
   flex-direction: column;
   align-items: center;
 
-  height: 356px;
   background: linear-gradient(180deg, #7755ff 0%, #2f2ce9 100%);
-
   border-radius: 0 0 24px 24px;
 }
 
@@ -119,13 +117,9 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  width: 140px;
-  height: 140px;
-
   /* colors/gradient/1 */
   background: linear-gradient(180deg, #4d21c9 0%, rgba(37, 33, 201, 0) 100%);
-  border-radius: 70px;
+  border-radius: 50%;
 }
 
 .result-container .result .score .num {
@@ -259,4 +253,54 @@ main {
   background-color: var(--color-navy-950);
   font: var(--text-preset5);
   color: var(--color-white);
+}
+
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+    max-width: 686px;
+    padding-bottom: 0px;
+    border-radius: 32px;
+    gap: 0px;
+  }
+
+  .result-container {
+    width: 338px;
+    border-radius: 32px;
+    gap: 32px;
+  }
+
+  .result-container .result {
+    max-width: 200px;
+    gap: 32px;
+  }
+
+  .result-container .result .head {
+    font: var(--text-preset4);
+  }
+  .result-container .result .score {
+    width: 200px;
+    height: 200px;
+  }
+  .result-container .result .content {
+    align-items: center;
+    gap: 16px;
+  }
+
+  .result-container .result .score .num {
+    font: var(--text-preset1);
+  }
+
+  .result-container .result .score .total {
+    font: var(--text-preset5);
+  }
+
+  .result-container .result .content .title {
+    font: var(--text-preset3);
+  }
+
+  .result-container .result .content .desc {
+    font: var(--text-preset5);
+    width: 200px;
+  }
 }
