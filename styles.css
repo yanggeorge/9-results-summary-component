@@ -194,7 +194,7 @@ main {
   object-fit: cover;
 }
 
-.summary .table .row .left .lable {
+.summary .table .row .left .label {
   font: var(--text-preset6-500);
 }
 
@@ -258,6 +258,7 @@ main {
 @media (min-width: 768px) {
   main {
     flex-direction: row;
+    width: auto;
     max-width: 686px;
     padding-bottom: 0px;
     border-radius: 32px;
@@ -302,5 +303,32 @@ main {
   .result-container .result .content .desc {
     font: var(--text-preset5);
     width: 200px;
+  }
+
+  .summary-container {
+    width: 348px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .summary {
+    gap: 32px;
+  }
+
+  .summary .title {
+    font: var(--text-preset4);
+  }
+
+  .summary .table .row .left .label {
+    font: var(--text-preset5-500);
+  }
+
+  .row .score .num {
+    font: var(--text-preset5);
+  }
+  .row .score .total {
+    font: var(--text-preset5);
   }
 }
